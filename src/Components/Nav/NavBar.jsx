@@ -11,7 +11,7 @@ export default function NavBar() {
 
     return (
         <div className='w-11/12 mx-auto'>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar bg-base-100 shadow-sm ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,7 @@ export default function NavBar() {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl gap-0"><span className='text-red-600'>B</span>oi-<span className='text-orange-400'>P</span>oka</a>
+                    <a className="btn btn-ghost text-xl gap-0 px-0"><span className='text-red-600'>B</span>oi-<span className='text-orange-400'>P</span>oka</a>
                 </div>
                 <div className="navbar-center  hidden  lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -32,7 +32,7 @@ export default function NavBar() {
                         }
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end px-0">
                     <a className="btn">Button</a>
                 </div>
             </div>
