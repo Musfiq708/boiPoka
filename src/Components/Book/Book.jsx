@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function Book({ book }) {
-    const { bookId, bookName, author, image, tags, category, rating } = book;
+    const { bookId, bookName, author, image, tags, category, rating,totalPages ,yearOfPublishing} = book;
     return (
         <Link to={
             `/books/${bookId}`
@@ -19,11 +19,13 @@ export default function Book({ book }) {
                     </div>
                     <h2 className="card-title">{bookName}</h2>
                     <p>By : {author}</p>
+                    <p>Published Year : {yearOfPublishing}</p>
 
                 </div>
                 <hr className="bg-[#13131326]" />
-                <div className="flex justify-between mt-5">
+                <div className="flex justify-between mt-5 items-center">
                     <h1>{category}</h1>
+                    <h1>Pages : {totalPages}</h1>
                     <div className="flex gap-2 items-center">
                         <h1>{rating}</h1>
                         <div className="rating rating-lg">
